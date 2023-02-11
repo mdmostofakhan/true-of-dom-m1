@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tour of Dom</title>
+    <style>
+        #fruis-title {
+            color: forestgreen;
+        }
+
+        .important-pleace {
+            color: rebeccapurple;
+        }
+
+        .fruits-container li {
+            color: rgb(19, 156, 145);
+
+        }
+    </style>
+</head>
+
+<body>
+    <HEader>
+        <H1>Welcome to my Dim</H1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum quae reprehenderit nam veritatis distinctio, provident, iste suscipit, facere sunt qui impedit.
+            Ipsum saepe laboriosam
+            accusamus illum ipsam nulla est maiores.</p>
+    </HEader>
+    <main id="main-container">
+        <section>
+            <h1>My Awesome Dom de mama</h1>
+            <ul>
+                <li>Jalali set</li>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruis-title" class="my home addres javascript color">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Orenge</li>
+                <li>panApple</li>
+                <li>Appletok</li>
+            </ul>
+        </section>
+        <section id="places-container" class="text-size">
+            <h1 id="Pleace-title">Pleace Welcome my visite</h1>
+            <ul id="places-list">
+                <li class="important-pleace">Soondarbar</li>
+                <li class="important-pleace">cox bazar</li>
+                <li class="important-pleace">sajek</li>
+                <li class="other-place">sentmartine</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="dom.js"></script>
+    <!-- <script src="append.js"></script> -->
+    <script src="practice.js"></script>
+    <script src="styleinjs.js"></script>
+
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(iCollection);
+        for (const li of liCollection) {
+            // console.lig(li.innerText);
+        }
+        // option: 2 : getElimentById 
+        const fruitsTitle = document.getElementById('fruis-title');
+        fruitsTitle.innerText = 'Fruits changes by js';
+
+        // option: 1 : getElementByTagNamee ----------
+
+        // const hellHeaging = document.getElementsByTagName('h1');
+        // for (const h1 of hellHeaging) {
+        //     console.log(h1.innerText);
+        // }
+
+
+        // option: 3 : getElementByClassName ______________
+
+        // const Pleace = document.getElementsByClassName('important-pleace');
+        // for (const pleac of pleace) {
+        //     console.log(pleac.innerText);
+        // }
+
+        // option: 4; querySelectorAll ----------------------
+        // option: 5: querySelectorAll-----------------------
+
+        // const someLi = document.querySelectorAll(' .fruits-container li')
+        // // console.log(someLi);
+        // for (const li of someLi) {
+        //     console.log(li.innerText);
+        // }
+
+        const someLi = document.querySelectorAll(' .fruits-container li')
+        for (const li of someLi) {
+            // console.log(li.innerText);
+        }
+
+        const please = document.getElementsByClassName("important-pleace");
+        for (const li of please) {
+            // console.log(li.innerText);
+        }
+
+        const hedingTag = document.getElementsByTagName("h1");
+        for (const h1 of hedingTag) {
+            // console.log(h1.innerText);
+        }
+
+    </script>
+
+</body>
+
+</html>
